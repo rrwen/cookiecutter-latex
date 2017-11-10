@@ -6,7 +6,7 @@
 {{cookiecutter.template_description}}.
 
 [![Build Status](https://travis-ci.org/{{cookiecutter.github_short}}.svg?branch=master)](https://travis-ci.org/{{cookiecutter.github_short}})
-[![GitHub license](https://img.shields.io/github/license/{{cookiecutter.github_short}}.svg)](https://github.com/{{cookiecutter.github_short}}/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/{{cookiecutter.github_short}}/blob/master/LICENSE)
 
 ## Developer Notes
 
