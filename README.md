@@ -37,6 +37,7 @@ In Linux/Mac:
 ```
 cookiecutter gh:rrwen/cookiecutter-latex
 cd <template_name>
+chmod +x make.sh
 ./make.sh
 ```
 
