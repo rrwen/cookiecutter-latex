@@ -8,11 +8,11 @@
    "github_short": "{{cookiecutter.github_user + '/' + cookiecutter.template_name}}",
    "tex_lastname": "Wen",
    "tex_affil": "Department of Civil Engineering, Ryerson University, Toronto, ON",
-   "tex_year": "{{from datetime import datetime;datetime.today().year}}",
+   "tex_year": "{% now 'utc', '%Y' %}",
    "tex_title": "tex_title",
    "tex_short": "{{cookiecutter.template_name.replace(' ', '').replace('-','')}}",
-   "tex_file": "{{cookiecutter.tex_lastname + cookiecutter.tex_year + '_' + cookiecutter.tex_short}}",
+   "tex_file": "{{(cookiecutter.tex_lastname + cookiecutter.tex_year + '_' + cookiecutter.tex_short).lower()}}",
    "tex_documentclass": "{article}",
-   "tex_graphicspath": "{./img/}",
+   "tex_graphicspath": "{% raw %}{{./img/}}{% endraw %}",
    "tex_DeclareGraphicsExtensions": "{.pdf,.png}"
 }
