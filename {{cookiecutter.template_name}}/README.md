@@ -28,5 +28,6 @@ In Linux/Mac:
 ```
 git clone {{cookiecutter.github_url}}
 cd {{cookiecutter.template_name}}
+chmod +x make.sh
 ./make.sh
 ```
