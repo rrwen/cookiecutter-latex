@@ -7,21 +7,6 @@
 % ========
 
 
-% -----------
-% graphicx
-% -----------
-%
-% Support for images
-%
-% Usage:
-%
-% \includegraphics[height=1cm, width=1cm]{example-image}
-%
-\usepackage{graphicx}
-\graphicspath{{cookiecutter.tex_graphicspath}}
-\DeclareGraphicsExtensions{{cookiecutter.tex_DeclareGraphicsExtensions}}
-
-
 % ------------
 % amsmath
 % ------------
@@ -94,6 +79,35 @@
 % \end{enumerate}
 %
 \usepackage{enumitem}
+
+
+% --------
+% geometry
+% --------
+%
+% Support for images
+%
+% Usage:
+%
+% \usepackage[letterpaper, landscape, margin=2in]{geometry}
+%
+\usepackage{geometry}
+\geometry{{cookiecutter.tex_geometry}}
+
+
+% -----------
+% graphicx
+% -----------
+%
+% Support for images
+%
+% Usage:
+%
+% \includegraphics[height=1cm, width=1cm]{example-image}
+%
+\usepackage{graphicx}
+\graphicspath{{cookiecutter.tex_graphicspath}}
+\DeclareGraphicsExtensions{{cookiecutter.tex_DeclareGraphicsExtensions}}
 
 
 % ----------
