@@ -12,4 +12,4 @@ install:
 script:
   - cookiecutter --no-input gh:rrwen/cookiecutter-latex
   - cd cookiecutter-latex
-  - ./make.sh
+  - sudo ./make.sh
