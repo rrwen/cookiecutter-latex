@@ -1,4 +1,3 @@
-language: bash
 sudo: required
 dist: trusty
 before_install:
@@ -13,4 +12,5 @@ install:
 script:
   - cookiecutter --no-input gh:rrwen/cookiecutter-latex
   - cd cookiecutter-latex
-  - bash make.sh
+  - chmod +x make.sh
+  - ./make.sh
