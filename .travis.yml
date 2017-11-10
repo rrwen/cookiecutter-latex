@@ -11,6 +11,6 @@ install:
   - pip install cookiecutter
 script:
   - cookiecutter --no-input gh:rrwen/cookiecutter-latex
-  - cd cookiecutter-latex
+  - cd template_name
   - chmod +x make.sh
   - ./make.sh
