@@ -1,3 +1,4 @@
+language: bash
 sudo: required
 dist: trusty
 before_install:
@@ -5,4 +6,4 @@ before_install:
 script:
   - git clone {{cookiecutter.github_url}}
   - cd {{cookiecutter.template_name}}
-  - ./make.sh
+  - bash make.sh
