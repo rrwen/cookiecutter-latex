@@ -1,0 +1,129 @@
+%% {{cookiecutter.author}}
+%% {{cookiecutter.email}}
+
+
+% ========
+% Packages
+% ========
+
+
+% -----------
+% graphicx
+% -----------
+%
+% Support for images
+%
+% Usage:
+%
+% \includegraphics[height=1cm, width=1cm]{example-image}
+%
+\usepackage{graphicx}
+\graphicspath{{cookiecutter.tex_graphicspath}}
+\DeclareGraphicsExtensions{{cookiecutter.tex_DeclareGraphicsExtensions}}
+
+
+% ------------
+% amsmath
+% ------------
+%
+% Useful commands for math
+%
+\usepackage{amsmath}
+
+
+% -------
+% array
+% -------
+%
+% Improve array and tabular formatting
+%
+\usepackage{array}
+
+
+% ---------
+% authblk
+% ---------
+%
+% Support for footnote style author/affiliation
+%
+\usepackage{authblk}
+
+
+% ------------
+% booktabs
+% ------------
+%
+% Support for better table formatting.
+%
+\usepackage{booktabs}
+
+
+% ----------
+% caption
+% ----------
+% Support for captions.
+%
+% Usage:
+%
+% \captionsetup[FLOAT_TYPE]{OPTIONS}
+%
+\usepackage{caption}
+\captionsetup[lstlisting]{
+	justification=raggedright,
+	singlelinecheck=false
+}
+
+
+% -------------
+% enumitem
+% -------------
+%
+% Support for enumeration listings.
+%
+% Usage:
+%
+% \begin{enumerate}[label=(\alph*)]
+% \item item a
+% \item item b
+% \end{enumerate}
+%
+\usepackage{enumitem}
+
+
+% ----------
+% listings
+% ----------
+%
+% Support for source code listings.
+%
+% Usage:
+%
+% \lstinputlisting[language=Python]{source_filename.py}
+% \lstinputlisting[language=Python, firstline=37, lastline=45]{source_filename.py}
+%
+\usepackage{listings}
+\lstset{
+	frame=single,
+	basicstyle=\small,
+	breaklines=true,
+	columns=fullflexible,
+	aboveskip=10pt,
+	belowskip=10pt,
+	framesep=0.1in,
+	xleftmargin=0.1in,
+	xrightmargin=0.1in
+}
+
+
+% ---
+% url
+% ---
+%
+% Support for link handling and breaking
+%
+% Usage:
+%
+% \url{my_url_here}
+%
+\usepackage{url}
+

@@ -12,6 +12,7 @@ Personal template for LaTeX documents with Python cookiecutter.
 
 1. Install [Python](https://www.python.org/downloads/)
 2. Install [cookiecutter](https://pypi.python.org/pypi/cookiecutter) via `pip`
+3. Install [TeX Live](https://www.tug.org/texlive/acquire-netinstall.html) or [Miktex](https://miktex.org/download)
 
 ```
 pip install cookiecutter
@@ -19,10 +20,24 @@ pip install cookiecutter
 
 ## Usage
 
-Create a template using [cookiecutter](https://pypi.python.org/pypi/cookiecutter):
+1. Create the [LaTeX](https://www.latex-project.org/) template using [cookiecutter](https://pypi.python.org/pypi/cookiecutter)
+2. Change the directory to the folder with the same name as the `template_name` input
+3. Render a pdf of the main file named as the `tex_file` input
+
+In Windows:
 
 ```
 cookiecutter gh:rrwen/cookiecutter-latex
+cd <template_name>
+make
+```
+
+In Linux/Mac:
+
+```
+cookiecutter gh:rrwen/cookiecutter-latex
+cd <template_name>
+./make.sh
 ```
 
 ## Developer Notes
