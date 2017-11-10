@@ -1,8 +1,8 @@
 {
   "author": "Richard Wen",
   "email": "rrwen.dev@gmail.com",
-  "template_name": "cookiecutter-latex",
-  "template_description": "Personal template for LaTeX documents with Python cookiecutter",
+  "template_name": "template_name",
+  "template_description": "template_description",
    "github_user": "rrwen",
    "github_url": "{{'https://github.com/' + cookiecutter.github_user + '/' + cookiecutter.template_name}}",
    "github_short": "{{cookiecutter.github_user + '/' + cookiecutter.template_name}}",
