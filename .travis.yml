@@ -13,4 +13,4 @@ install:
 script:
   - cookiecutter --no-input gh:rrwen/cookiecutter-latex
   - cd cookiecutter-latex
-  - bash make.sh
+  - sudo bash make.sh

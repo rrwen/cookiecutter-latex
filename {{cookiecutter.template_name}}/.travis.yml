@@ -6,4 +6,4 @@ before_install:
 script:
   - git clone {{cookiecutter.github_url}}
   - cd {{cookiecutter.template_name}}
-  - bash make.sh
+  - sudo bash make.sh
