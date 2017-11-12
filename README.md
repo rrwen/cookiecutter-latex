@@ -66,7 +66,7 @@ git push -u origin master
 
 ### Implementation
 
-This code creates folders and files for [cookiecutter](https://pypi.python.org/pypi/cookiecutter) templates.
+This code creates a latex template using [cookiecutter](https://pypi.python.org/pypi/cookiecutter).
 
 * The main file is [cookiecutter.json](https://github.com/rrwen/cookiecutter-npm/blob/master/cookiecutter.json) which defines the inputs for the command line interface
 * The inputs then replace any values surrounded with `{{}}` inside the folder [{{cookiecutter.template_name}}](https://github.com/rrwen/cookiecutter-latex/tree/master/%7B%7B{{cookiecutter.template_name}}%7D%7D)
