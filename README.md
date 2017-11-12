@@ -41,6 +41,8 @@ chmod +x make.sh
 ./make.sh
 ```
 
+See [Implementation](#implementation) for more details.
+
 ## Developer Notes
 
 ### Create Github Repository
@@ -79,5 +81,7 @@ This code creates folders and files for [cookiecutter](https://pypi.python.org/p
 
 The following files will be created inside a folder with the same name as the `template_name` input:
 
-* **LICENSE**: MIT [license file](https://help.github.com/articles/licensing-a-repository/) automatically created from github
-* **README.md**: a readme [Markdown](https://daringfireball.net/projects/markdown/) file with header section
+File | Description
+--- | ---
+**LICENSE** | MIT [license file](https://help.github.com/articles/licensing-a-repository/) automatically created from github
+**README.md** | a readme [Markdown](https://daringfireball.net/projects/markdown/) file with header section
