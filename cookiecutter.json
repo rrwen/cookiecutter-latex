@@ -13,7 +13,7 @@
   "tex_short": "{{cookiecutter.template_name.replace(' ', '').replace('-','')}}",
   "tex_file": "{{(cookiecutter.tex_lastname + cookiecutter.tex_year + '_' + cookiecutter.tex_short).lower()}}",
   "tex_documentclass": "[letterpaper,12pt]{article}",
-  "tex_setmainfont": "{Arial}",
+  "tex_setmainfont": "{Times New Roman}",
   "tex_geometry": "{margin=1in}",
   "tex_graphicspath": "{% raw %}{{./img/}}{% endraw %}",
   "tex_DeclareGraphicsExtensions": "{.pdf,.png}"
