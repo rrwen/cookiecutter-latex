@@ -2,6 +2,7 @@ sudo: required
 dist: trusty
 before_install:
   - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-full texlive-fonts-extra
+  - sudo fc-list | grep Times | grep ".otf"
 language: python
 python:
   - "2.7"
