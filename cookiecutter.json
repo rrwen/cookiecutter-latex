@@ -12,8 +12,7 @@
    "tex_title": "tex_title",
    "tex_short": "{{cookiecutter.template_name.replace(' ', '').replace('-','')}}",
    "tex_file": "{{(cookiecutter.tex_lastname + cookiecutter.tex_year + '_' + cookiecutter.tex_short).lower()}}",
-   "tex_documentclass": "{article}",
-   "tex_documentclass_options": "[12pt]",
+   "tex_documentclass": "[12pt]{article}",
    "tex_geometry": "{margin=1in}",
    "tex_graphicspath": "{% raw %}{{./img/}}{% endraw %}",
    "tex_DeclareGraphicsExtensions": "{.pdf,.png}"
