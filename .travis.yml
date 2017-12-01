@@ -2,7 +2,6 @@ sudo: required
 dist: trusty
 before_install:
   - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-full
-  - sudo fc-list
 language: python
 python:
   - "2.7"
