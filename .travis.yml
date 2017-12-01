@@ -1,7 +1,7 @@
 sudo: required
 dist: trusty
 before_install:
-  - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-full
+  - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-full texlive-fonts-extra
 language: python
 python:
   - "2.7"
