@@ -3,7 +3,7 @@
 {{cookiecutter.author}}  
 {{cookiecutter.email}}  
 
-* [PDF](https://github.com/{{cookiecutter.github_short}}/blob/master/{{cookiecutter.file_name}}.pdf)
+* [PDF](https://github.com/{{cookiecutter.github_short}}/blob/master/{{cookiecutter.tex_file}}.pdf)
 
 {{cookiecutter.template_description}}.
 
