@@ -3,6 +3,8 @@
 {{cookiecutter.author}}  
 {{cookiecutter.email}}  
 
+* [PDF](https://github.com/{{cookiecutter.github_short}}/blob/master/{{cookiecutter.file_name}}.pdf)
+
 {{cookiecutter.template_description}}.
 
 [![Build Status](https://travis-ci.org/{{cookiecutter.github_short}}.svg?branch=master)](https://travis-ci.org/{{cookiecutter.github_short}})
