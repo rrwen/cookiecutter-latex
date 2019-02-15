@@ -1,20 +1,19 @@
 %% {{cookiecutter.author}}
 %% {{cookiecutter.email}}
 
-
 \documentclass{{cookiecutter.tex_documentclass}}
 \usepackage{fontspec}
 \setmainfont{{cookiecutter.tex_setmainfont}}
 
+% PACKAGES
 
-% *** PACKAGES ***
+\input{packages}
 
+% FOOTER
 
-\input{tex/packages}
+\rfoot{\thepage}
 
-
-% *** DOCUMENT ***
-
+% DOCUMENT
 
 \begin{document}
 
@@ -25,4 +24,3 @@
 \bibliography{tex/references}
 
 \end{document}
-

@@ -1,11 +1,7 @@
 %% {{cookiecutter.author}}
 %% {{cookiecutter.email}}
 
-
-% *** PACKAGES ***
-
-
-% *** amsmath ***
+% amsmath
 %
 % Useful commands for math
 %
@@ -17,29 +13,26 @@
 %
 \usepackage{amsmath}
 
-
-% ***  array ***
+% array
 %
 % Improve array and tabular formatting
 %
 \usepackage{array}
 
-
-% *** authblk ***
+% authblk
 %
 % Support for footnote style author/affiliation
 %
 \usepackage{authblk}
 
-
-% *** booktabs ***
+% booktabs
 %
 % Support for better table formatting.
 %
 \usepackage{booktabs}
 
-
-% *** caption ***
+% caption
+%
 % Support for captions.
 %
 % Usage:
@@ -52,8 +45,7 @@
 	singlelinecheck=false
 }
 
-
-% *** enumitem ***
+% enumitem
 %
 % Support for enumeration listings.
 %
@@ -66,8 +58,7 @@
 %
 \usepackage{enumitem}
 
-
-% *** geometry ***
+% geometry
 %
 % Support for images
 %
@@ -75,11 +66,28 @@
 %
 % \usepackage[letterpaper, landscape, margin=2in]{geometry}
 %
-\usepackage{geometry}
+\usepackage[includehead,includefoot]{geometry}
 \geometry{{cookiecutter.tex_geometry}}
 
+% fancyhdr
+%
+% Support for custom page headers and footers.
+%
+% Usage:
+%
+% \pagestyle{fancy}
+% \fancyhf{}
+% \rfoot{\thepage}
+% \begin{document}
+% \end{document}
+%
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead{}
+\cfoot{}
 
-% *** graphicx ***
+% graphicx
 %
 % Support for images
 %
@@ -91,8 +99,17 @@
 \graphicspath{{cookiecutter.tex_graphicspath}}
 \DeclareGraphicsExtensions{{cookiecutter.tex_DeclareGraphicsExtensions}}
 
+% inputenc
+%
+% Support for input encoding
+%
+% Usage:
+%
+% \usepackage[utf8]{inputenc}
+%
+\usepackage[utf8]{inputenc}
 
-% *** listings ***
+% listings
 %
 % Support for source code listings.
 %
@@ -114,15 +131,13 @@
 	xrightmargin=0.1in
 }
 
-
-% *** natbib ***
+% natbib
 %
 % Support for better citations
 %
 \usepackage{natbib}
 
-
-% *** url ***
+% url
 %
 % Support for link handling and breaking
 %
@@ -131,4 +146,3 @@
 % \url{my_url_here}
 %
 \usepackage{url}
-
