@@ -27,7 +27,7 @@
 	"tex_geometry": "{{'{margin=' + cookiecutter.tex_margin + '}'}}",
     "tex_DeclareGraphicsExtensions": "{{'{' + cookiecutter.tex_imageformats + '}'}}",
     "tex_graphicspath": "{{'{{' + cookiecutter.tex_imagefolder + '}}'}}",
-	"tex_title": "{{'{' + cookiecutter.tex_title.replace('_','\_') + '}'}}",
+	"tex_title": "{{'{' + cookiecutter.tex_title.replace('_','\\_') + '}'}}",
 	"tex_author": "{{'{' + cookiecutter.author + (' $\\cdot$ ' + cookiecutter.email if cookiecutter.include_email == 'yes' else '') + '}'}}",
 	"tex_lfoot": "{{'{' + cookiecutter.vars.author + ' $\\cdot$ ' + cookiecutter.vars.tex_title + '}'}}"
   }
