@@ -3,9 +3,32 @@
 
 % TITLE
 
-\title{% raw %}{{% endraw %}{{cookiecutter.tex_title.replace('_','\_')}}{% raw %}}{% endraw %}
-\author{% raw %}{{% endraw %}{{cookiecutter.author}}{% raw %}}{% endraw %}
-\affil{% raw %}{{% endraw %}{{cookiecutter.tex_affil}}{% raw %}}{% endraw %}
+{% if cookiecutter.tex_titlepage == "yes" -%}
+\title{{cookiecutter.vars.tex_title}}
+\author{{'{' + cookiecutter.vars.tex_author + '}'}}
+\affil{{'{' + cookiecutter.tex_affil + '}'}}
 \date{\today}
 
 \maketitle
+{%- endif %}
+
+{% if cookiecutter.tex_titlepage == "no" -%}
+
+{\small\noindent
+{\huge {{cookiecutter.vars.text_title}} \\ \\
+{{cookiecutter.author}} \\
+{{cookiecutter.tex_affil}} \\
+\today \\ \\
+}
+
+% Remove header and footer except for page number
+
+\fancypagestyle{firstpage}{%
+	\renewcommand{\headrulewidth}{0pt}
+	\fancyhead{}
+	\lfoot{}
+	\cfoot{}
+    \rfoot{\thepage}
+}
+\thispagestyle{firstpage}
+{%- endif %}

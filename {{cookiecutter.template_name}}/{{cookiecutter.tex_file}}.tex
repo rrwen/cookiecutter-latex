@@ -1,16 +1,19 @@
 %% {{cookiecutter.author}}
 %% {{cookiecutter.email}}
 
-\documentclass{{cookiecutter.tex_documentclass}}
+\documentclass{{cookiecutter.vars.tex_documentclass}}
 \usepackage{fontspec}
-\setmainfont{{cookiecutter.tex_setmainfont}}
+\setmainfont{{cookiecutter.vars.tex_setmainfont}}
 
 % PACKAGES
 
-\input{packages}
+\input{tex/packages}
 
 % FOOTER
 
+{% if cookiecutter.include_footer == "yes" -%}
+\lfoot{{cookiecutter.vars.tex_lfoot}}
+{%- endif %}
 \rfoot{\thepage}
 
 % DOCUMENT
